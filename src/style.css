@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply container mx-auto;
+}
+
+img {
+  @apply w-full block;
+}
+
+h1,
+h2,
+h3,
+p {
+  @apply tracking-wide;
+}
+
+article {
+  @apply container mx-auto max-w-3xl my-12 lg:my-32 px-6;
+}
+
+article h2 {
+  @apply font-semibold text-lg mb-4;
+}
+
+article p {
+  @apply text-sm;
+}
+
+.hero {
+  @apply grid place-items-center;
+  @apply aspect-video;
+  @apply bg-cover bg-center;
+  background-image: url("/office.jpg");
+}
+
+.hero h1 {
+  @apply text-6xl lg:text-8xl font-bold tracking-normal;
+  color: #ff764d;
+}
+
+.grid-collage {
+  @apply grid grid-rows-7 grid-cols-12;
+}
+
+.taller {
+  @apply grid-rows-11;
+}
+
+.call-to-action {
+  @apply grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1;
+  @apply md:aspect-video;
+  background-color: #b1c5ff;
+}
+
+.call-to-action img {
+  @apply object-cover self-stretch;
+}
+
+/* =============== Images in Grid Collage 1 =============== */
+
+#grid-collage-1 .img-large {
+  @apply col-start-2 col-end-7;
+  @apply row-start-2 row-end-7;
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-1 .img-small {
+  @apply col-start-8 col-end-12;
+  @apply row-start-3 row-end-6;
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-1 .colored-box {
+  @apply col-start-6 col-end-[13];
+  @apply row-start-1 row-end-[8];
+  background-color: #fbffa7;
+}
+
+/* =============== Images in Grid Collage 2 =============== */
+
+#grid-collage-2 .img-small-top {
+  @apply col-start-2 col-end-6;
+  @apply row-start-2 row-end-6;
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-2 .img-small-bottom {
+  @apply col-start-2 col-end-6;
+  @apply row-start-7 row-end-[11];
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-2 .img-large {
+  @apply col-start-7 col-end-12;
+  @apply row-start-3 row-end-[10];
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-2 .colored-box {
+  @apply col-start-1 col-end-8;
+  @apply row-start-1 row-end-[13];
+  background-color: #b6ffc0;
+}
+
+/* =============== Images in Grid Collage 3 =============== */
+
+#grid-collage-3 .img-small {
+  @apply col-start-2 col-end-6;
+  @apply row-start-3 row-end-6;
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-3 .img-large {
+  @apply col-start-8 col-end-[13];
+  @apply row-start-2 row-end-7;
+  @apply object-cover self-stretch;
+}
+
+#grid-collage-3 .colored-box {
+  @apply col-start-3 col-end-11;
+  @apply row-start-1 row-end-[13];
+  background-color: #d5b3ff;
+}
